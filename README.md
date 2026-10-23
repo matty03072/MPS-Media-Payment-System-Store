@@ -12,7 +12,7 @@ After services are configured and an invited member signs up and verifies their 
 
 Members can manage their membership, open Emby and discover/request content through Ombi from the same portal. MPS coordinates the services; it does not replace them or automatically configure the administrator's service connections.
 
-Read the [full application overview and automation workflow](https://github.com/matty03072/members-portal-preview#automated-account-creation), including the default preview's public-access and payment-callback limitations.
+Read the [full application overview and automation workflow](https://github.com/matty03072/MPS-Media-Payment-System#automated-account-creation), including the default preview's public-access and payment-callback limitations.
 
 ## Screenshots
 
@@ -20,20 +20,20 @@ Live application views with temporary MPS branding; names and emails removed bef
 
 ### Administrator overview
 
-![MPS administrator overview](https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png)
+![MPS administrator overview](https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png)
 
 ### Member dashboard
 
-![MPS member dashboard](https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png)
+![MPS member dashboard](https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png)
 
 ### Member request statuses
 
-![MPS member request statuses](https://raw.githubusercontent.com/matty03072/members-portal-preview/6987cf235f33005650526336312cb591d1e28fa5/docs/screenshots/member-request-status.png)
+![MPS member request statuses](https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/44994dfc2fd1fa7b1734ef5b0bbf7580a848de84/docs/screenshots/member-request-status-redacted-v2.png)
 
 ## Install
 1. In umbrelOS, open **App Store → Community App Stores** (usually in the
    App Store menu).
-2. Add `https://github.com/matty03072/members-portal-preview-store`.
+2. Add `https://github.com/matty03072/MPS-Media-Payment-System-Store`.
 3. Open **MPS Preview** and install **MPS (Preview)**.
 4. Open the installed app from Umbrel. Unlock first-run setup with username
    `owner` and the app password shown by Umbrel.
@@ -52,7 +52,7 @@ Use test integrations only. Default Umbrel authentication protects every route;
 public invitations and external payment callbacks are not supported by this
 preview configuration. No official-store submission has been made.
 
-Source and build checks: https://github.com/matty03072/members-portal-preview
+Source and build checks: https://github.com/matty03072/MPS-Media-Payment-System
 
 Container checks do not constitute an umbrelOS installation test. The first
 install, UI setup/MFA, reboot and backup/restore still need testing on your Umbrel.

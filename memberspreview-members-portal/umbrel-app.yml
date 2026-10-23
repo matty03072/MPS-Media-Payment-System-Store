@@ -3,7 +3,7 @@ id: memberspreview-members-portal
 storage:
   dataRoot: data
 category: media
-name: MPS (Preview)
+name: MPS — Media Payment System
 version: "0.1.0-beta.4"
 tagline: Media, memberships and payments in one place
 description: >-
@@ -18,19 +18,19 @@ description: >-
   the default package stays protected by Umbrel login.
 releaseNotes: "Adds Sonarr/Radarr request progress, optional post-import Emby scans, category settings and Emby server editing. Preserves MPS branding and existing preview data. Configure connected services separately."
 developer: "matty03072"
-website: "https://github.com/matty03072/members-portal-preview"
+website: "https://github.com/matty03072/MPS-Media-Payment-System"
 dependencies: []
-repo: "https://github.com/matty03072/members-portal-preview"
-support: "https://github.com/matty03072/members-portal-preview/issues"
+repo: "https://github.com/matty03072/MPS-Media-Payment-System"
+support: "https://github.com/matty03072/MPS-Media-Payment-System/issues"
 port: 18099
 gallery:
-  - https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png
-  - https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png
-  - https://raw.githubusercontent.com/matty03072/members-portal-preview/6987cf235f33005650526336312cb591d1e28fa5/docs/screenshots/member-request-status.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/44994dfc2fd1fa7b1734ef5b0bbf7580a848de84/docs/screenshots/member-request-status-redacted-v2.png
 path: /setup
 defaultUsername: owner
 defaultPassword: ""
 deterministicPassword: true
 submitter: "matty03072"
-submission: "https://github.com/matty03072/members-portal-preview-store"
-icon: https://raw.githubusercontent.com/matty03072/members-portal-preview/v0.1.0-beta.3/static/mps-icon.png
+submission: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
+icon: https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/v0.1.0-beta.3/static/mps-icon.png
