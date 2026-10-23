@@ -50,3 +50,11 @@ means outside the official store, not private distribution.
 New MPS logo and identity across the app, emails and listing. Use Umbrel Update
 for the existing app; do not uninstall. The stable app ID and repository URL are
 retained to preserve update continuity and data. Sign in again after updating.
+
+## Current features (beta.4)
+
+The preview now includes Sonarr/Radarr connection settings, member-scoped download
+and import progress, optional post-import Emby scans, separate configuration pages
+and Emby server editing/library refresh. Configure your own services under
+**Configuration → Connected services**; no live-site credentials are included.
+Update the existing app in place. No schema migration is needed.
