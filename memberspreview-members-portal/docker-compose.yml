@@ -1,0 +1,38 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: memberspreview-members-portal_web_1
+      APP_PORT: 8099
+  web:
+    image: ghcr.io/matty03072/members-portal-preview:v0.1.0-beta.2@sha256:960d94ec23b133776d09124a1e3d5a5bb2e958f0d1a610692f38038058b55775
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    environment:
+      UMBREL_BOOTSTRAP_PASSWORD: ${APP_PASSWORD}
+      PUBLIC_URL: http://${DEVICE_DOMAIN_NAME}:${APP_PROXY_PORT}
+    volumes:
+      - ${APP_DATA_DIR}/data/state:/state
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8099/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  worker:
+    image: ghcr.io/matty03072/members-portal-preview:v0.1.0-beta.2@sha256:960d94ec23b133776d09124a1e3d5a5bb2e958f0d1a610692f38038058b55775
+    command: [worker]
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    environment:
+      UMBREL_BOOTSTRAP_PASSWORD: ${APP_PASSWORD}
+      PUBLIC_URL: http://${DEVICE_DOMAIN_NAME}:${APP_PROXY_PORT}
+    volumes:
+      - ${APP_DATA_DIR}/data/state:/state
+    depends_on:
+      web:
+        condition: service_healthy
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
