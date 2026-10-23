@@ -23,7 +23,10 @@ dependencies: []
 repo: "https://github.com/matty03072/members-portal-preview"
 support: "https://github.com/matty03072/members-portal-preview/issues"
 port: 18099
-gallery: []
+gallery:
+  - https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png
+  - https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png
+  - https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-request-status.png
 path: /setup
 defaultUsername: owner
 defaultPassword: ""

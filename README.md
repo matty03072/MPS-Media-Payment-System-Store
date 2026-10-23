@@ -14,6 +14,22 @@ Members can manage their membership, open Emby and discover/request content thro
 
 Read the [full application overview and automation workflow](https://github.com/matty03072/members-portal-preview#automated-account-creation), including the default preview's public-access and payment-callback limitations.
 
+## Screenshots
+
+Live application views with temporary MPS branding; names and emails removed before blurring. No live-site data or configuration is included in the install.
+
+### Administrator overview
+
+![MPS administrator overview](https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png)
+
+### Member dashboard
+
+![MPS member dashboard](https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png)
+
+### Member request statuses
+
+![MPS member request statuses](https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-request-status.png)
+
 ## Install
 1. In umbrelOS, open **App Store → Community App Stores** (usually in the
    App Store menu).
