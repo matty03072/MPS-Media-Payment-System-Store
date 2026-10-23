@@ -28,7 +28,7 @@ Live application views with temporary MPS branding; names and emails removed bef
 
 ### Member request statuses
 
-![MPS member request statuses](https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-request-status.png)
+![MPS member request statuses](https://raw.githubusercontent.com/matty03072/members-portal-preview/6987cf235f33005650526336312cb591d1e28fa5/docs/screenshots/member-request-status.png)
 
 ## Install
 1. In umbrelOS, open **App Store → Community App Stores** (usually in the

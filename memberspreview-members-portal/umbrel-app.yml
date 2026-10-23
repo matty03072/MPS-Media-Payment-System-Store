@@ -26,7 +26,7 @@ port: 18099
 gallery:
   - https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png
   - https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png
-  - https://raw.githubusercontent.com/matty03072/members-portal-preview/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-request-status.png
+  - https://raw.githubusercontent.com/matty03072/members-portal-preview/6987cf235f33005650526336312cb591d1e28fa5/docs/screenshots/member-request-status.png
 path: /setup
 defaultUsername: owner
 defaultPassword: ""
