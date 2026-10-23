@@ -34,7 +34,7 @@ Live application views with temporary MPS branding; names and emails removed bef
 1. In umbrelOS, open **App Store → Community App Stores** (usually in the
    App Store menu).
 2. Add `https://github.com/matty03072/MPS-Media-Payment-System-Store`.
-3. Open **MPS Preview** and install **MPS (Preview)**.
+3. Open **MPS — Media Payment System** and install **MPS — Media Payment System**.
 4. Open the installed app from Umbrel. Unlock first-run setup with username
    `owner` and the app password shown by Umbrel.
 5. Create your permanent owner account and enrol MFA with an authenticator.
