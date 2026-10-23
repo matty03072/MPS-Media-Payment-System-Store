@@ -3,11 +3,11 @@ id: memberspreview-members-portal
 storage:
   dataRoot: data
 category: media
-name: Members Portal (Preview)
-version: "0.1.0-beta.2"
-tagline: Manage memberships for your media servers
+name: MPS (Preview)
+version: "0.1.0-beta.3"
+tagline: Media, memberships and payments in one place
 description: >-
-  Manage media-server invitations, members and optional billing integrations.
+  MPS — Media Payment System. Manage media-server invitations, members and optional billing integrations.
   On first launch, unlock setup with username owner and the password shown by
   Umbrel, then choose your permanent owner account and enrol an authenticator.
 
@@ -16,7 +16,7 @@ description: >-
   No integrations are enabled automatically. This preview has not been certified
   for live billing. Public member access requires separate HTTPS deployment;
   the default package stays protected by Umbrel login.
-releaseNotes: "Initial test preview. Not an official store release. Use test accounts only."
+releaseNotes: "New MPS identity, logo, app styling and branded emails. Existing preview data is preserved. Sign in again after updating."
 developer: "matty03072"
 website: "https://github.com/matty03072/members-portal-preview"
 dependencies: []
@@ -30,4 +30,4 @@ defaultPassword: ""
 deterministicPassword: true
 submitter: "matty03072"
 submission: "https://github.com/matty03072/members-portal-preview-store"
-icon: https://raw.githubusercontent.com/matty03072/members-portal-preview/v0.1.0-beta.2/static/favicon.svg
+icon: https://raw.githubusercontent.com/matty03072/members-portal-preview/v0.1.0-beta.3/static/mps-icon.png

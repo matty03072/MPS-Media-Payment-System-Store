@@ -1,4 +1,6 @@
-# Members Portal Preview Store
+# MPS — Media Payment System
+
+Community Preview Store
 
 Community test distribution only — not an official Umbrel App Store release.
 
@@ -6,7 +8,7 @@ Community test distribution only — not an official Umbrel App Store release.
 1. In umbrelOS, open **App Store → Community App Stores** (usually in the
    App Store menu).
 2. Add `https://github.com/matty03072/members-portal-preview-store`.
-3. Open **Members Portal Preview** and install **Members Portal (Preview)**.
+3. Open **MPS Preview** and install **MPS (Preview)**.
 4. Open the installed app from Umbrel. Unlock first-run setup with username
    `owner` and the app password shown by Umbrel.
 5. Create your permanent owner account and enrol MFA with an authenticator.
@@ -33,3 +35,8 @@ key. Do not assume automatic migration to a future production app ID.
 
 The public store and container are accessible to other people; community/test
 means outside the official store, not private distribution.
+
+## Branding update (beta.3)
+New MPS logo and identity across the app, emails and listing. Use Umbrel Update
+for the existing app; do not uninstall. The stable app ID and repository URL are
+retained to preserve update continuity and data. Sign in again after updating.
