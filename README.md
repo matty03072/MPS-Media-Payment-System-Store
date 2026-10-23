@@ -14,6 +14,12 @@ Members can manage their membership, open Emby and discover/request content thro
 
 Read the [full application overview and automation workflow](https://github.com/matty03072/MPS-Media-Payment-System#automated-account-creation), including the default preview's public-access and payment-callback limitations.
 
+## Custom branding
+
+Administrators can open **Configuration → Branding** to upload their logo and set their own site name. The site and new emails use the saved branding, with a linked MPS — Media Payment System credit retained in the footer.
+
+![Branding settings](https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/88a980b778f17858f147c98e0e09bb3073a637b8/docs/screenshots/branding-settings.png)
+
 ## Screenshots
 
 Live application views with temporary MPS branding; names and emails removed before blurring. No live-site data or configuration is included in the install.

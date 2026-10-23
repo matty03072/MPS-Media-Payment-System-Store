@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: media
 name: MPS — Media Payment System
-version: "0.1.0-beta.4"
+version: "0.1.0-beta.5"
 tagline: Media, memberships and payments in one place
 description: >-
   MPS — Media Payment System. Manage media-server invitations, members and optional billing integrations.
@@ -16,7 +16,7 @@ description: >-
   No integrations are enabled automatically. This preview has not been certified
   for live billing. Public member access requires separate HTTPS deployment;
   the default package stays protected by Umbrel login.
-releaseNotes: "Adds Sonarr/Radarr request progress, optional post-import Emby scans, category settings and Emby server editing. Preserves MPS branding and existing preview data. Configure connected services separately."
+releaseNotes: "Adds Configuration → Branding: upload your logo and set your site name for the website and new emails. Site and email footers retain your branding plus linked MPS attribution. Preserves existing app data and corrects invitation setup guidance."
 developer: "matty03072"
 website: "https://github.com/matty03072/MPS-Media-Payment-System"
 dependencies: []
