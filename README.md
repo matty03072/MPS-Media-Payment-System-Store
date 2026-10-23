@@ -4,6 +4,16 @@ Community Preview Store
 
 Community test distribution only — not an official Umbrel App Store release.
 
+## What is MPS?
+
+MPS brings media memberships, payments and connected service accounts into one self-hosted portal. It integrates **Emby, Emby Connect, Ombi, Stripe, PayPal and SMTP email** so administrators can manage invitations, plans, permissions and member access together.
+
+After services are configured and an invited member signs up and verifies their email, MPS can automatically create their **Emby server accounts**, register or authenticate and link **Emby Connect**, and create or link their **Ombi account** using the signup details. The background worker tracks progress, retries recoverable failures and flags account conflicts. Access depends on membership entitlement, and Emby Connect may require its own email verification.
+
+Members can manage their membership, open Emby and discover/request content through Ombi from the same portal. MPS coordinates the services; it does not replace them or automatically configure the administrator's service connections.
+
+Read the [full application overview and automation workflow](https://github.com/matty03072/members-portal-preview#automated-account-creation), including the default preview's public-access and payment-callback limitations.
+
 ## Install
 1. In umbrelOS, open **App Store → Community App Stores** (usually in the
    App Store menu).
