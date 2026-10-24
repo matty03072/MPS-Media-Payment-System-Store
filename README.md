@@ -56,7 +56,7 @@ production database, credentials or member records are included.
 
 Use test integrations only. Default Umbrel authentication protects every route;
 public invitations and external payment callbacks are not supported by this
-preview configuration. No official-store submission has been made.
+preview configuration. An official-store submission is under review; this community store is separate.
 
 Source and build checks: https://github.com/matty03072/MPS-Media-Payment-System
 
@@ -80,3 +80,17 @@ and import progress, optional post-import Emby scans, separate configuration pag
 and Emby server editing/library refresh. Configure your own services under
 **Configuration → Connected services**; no live-site credentials are included.
 Update the existing app in place. No schema migration is needed.
+
+
+## Application licensing (beta.6)
+
+Ten enabled non-admin members are free. Larger installations require a GBP 5/month
+unlock covering three applications. Back up the entire state directory before
+updating; preserve your installation UUID. Without an unlock, excess member records
+remain stored but only the ten oldest enabled non-admin members retain MPS access.
+New source-available no-resale terms apply; paid membership operations are permitted.
+
+[Licensing and upgrade guide](https://github.com/matty03072/MPS-Media-Payment-System/blob/v0.1.0-beta.6/docs/APPLICATION-LICENSING.md).
+[Purchase and signed-in support](https://members.streaminghome.app/mps).
+Cancellation stops renewal at period end. Requests within 14 days of the latest
+payment receive a full refund; paid access remains until period end.
