@@ -82,7 +82,7 @@ and Emby server editing/library refresh. Configure your own services under
 Update the existing app in place. No schema migration is needed.
 
 
-## Application licensing (beta.6)
+## Application licensing (1.0.0)
 
 Ten enabled non-admin members are free. Larger installations require a GBP 5/month
 unlock covering three applications. Back up the entire state directory before
@@ -90,7 +90,7 @@ updating; preserve your installation UUID. Without an unlock, excess member reco
 remain stored but only the ten oldest enabled non-admin members retain MPS access.
 New source-available no-resale terms apply; paid membership operations are permitted.
 
-[Licensing and upgrade guide](https://github.com/matty03072/MPS-Media-Payment-System/blob/v0.1.0-beta.6/docs/APPLICATION-LICENSING.md).
+[Licensing and upgrade guide](https://github.com/matty03072/MPS-Media-Payment-System/blob/v1.0.0/docs/APPLICATION-LICENSING.md).
 [Purchase and signed-in support](https://members.streaminghome.app/mps).
 Cancellation stops renewal at period end. Requests within 14 days of the latest
 payment receive a full refund; paid access remains until period end.
