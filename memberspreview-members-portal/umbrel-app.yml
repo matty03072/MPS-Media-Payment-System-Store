@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: media
 name: MPS — Media Payment System
-version: "1.0.0-patch.1"
+version: "1.0.1"
 tagline: Media, memberships and payments in one place
 description: >-
   MPS — Media Payment System. Manage media-server invitations, members and optional billing integrations.
@@ -17,12 +17,12 @@ description: >-
   for live billing. Public member access requires separate HTTPS deployment;
   the default package stays protected by Umbrel login.
 
-  Includes ten enabled non-admin members free. Larger installations require a
+  Includes ten enabled members free; linked media administrators count toward this limit. Larger installations require a
   GBP 5/month MPS unlock subscription for up to three applications. The licence
   service requires verified email and MFA. Source-available no-resale terms apply;
   operating paid membership services is permitted. Back up before upgrading.
 
-releaseNotes: "Corrects the application and installer version display to 1.0.0. Licensing behaviour and stored data are unchanged. Application licensing: ten enabled non-admin members free; GBP 5/month unlock for up to three applications. Back up the entire app data before updating. Installations over ten members need an active unlock to preserve access for all members; data is retained. Includes verified-email/MFA licence accounts, private signed-in support, period-end cancellation and full refunds requested within 14 days of payment. New source-available no-resale terms apply; commercial membership use is allowed. Preserve the existing installation and state. Release notes: https://github.com/matty03072/MPS-Media-Payment-System/releases/tag/v1.0.0"
+releaseNotes: "Licensing security update: installation proofs, rotating sessions, protected revocation state and trusted lease expiry. Paid access requires an online check after restart. Licence downgrade now disables excess linked Emby access while retaining member data; linked media administrators count toward the limit. Back up the entire app data before updating and preserve the existing installation/state. Windows and Linux installer downloads are not included. Release notes: https://github.com/matty03072/MPS-Media-Payment-System/releases/tag/v1.0.1"
 developer: "matty03072"
 website: "https://github.com/matty03072/MPS-Media-Payment-System"
 dependencies: []
