@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: media
 name: MPS — Media Payment System
-version: "1.0.2"
+version: "1.0.3"
 tagline: Media, memberships and payments in one place
 description: >-
   MPS — Media Payment System. Manage media-server invitations, members and optional billing integrations.
@@ -22,7 +22,11 @@ description: >-
   service requires verified email and MFA. MPS no-resale terms apply; application source is private;
   operating paid membership services is permitted. Back up before upgrading.
 
-releaseNotes: "MPS 1.0.2 updates application distribution and store documentation. Existing features, licensing terms and app data locations are unchanged. Back up the complete app data folder and update in place; do not uninstall. Release notes: https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.2.md"
+  Free and licensed installations periodically report an installation identifier, app version and activity time
+  to measure active installations. No member details, media activity or service credentials are included.
+  Reporting failures do not change free-tier access.
+
+releaseNotes: "Adds installation activity reporting for free and licensed installations. Reports an installation identifier, app version and activity time only; no member details, media activity or service credentials. Reporting failures do not change free-tier access. Back up app data and update in place; do not uninstall. https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.3.md"
 developer: "matty03072"
 website: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
 dependencies: []

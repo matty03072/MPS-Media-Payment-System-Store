@@ -23,6 +23,10 @@ administrative licence management and recovery remain available.
 
 Never publish your unlock code. An internet connection is required to activate and periodically verify paid access, including after restarting the application.
 
+## Installation activity
+
+Free and licensed installations periodically report an installation identifier, app version and activity time to help measure active installations. Reports do not include member details, media activity or service credentials. This reporting is separate from subscription verification; reporting failures do not change free-tier access. See the [privacy notice](https://members.streaminghome.app/mps/privacy).
+
 ## Checks, fallback and removals
 
 - If paid access cannot be verified, the application may return to the ten-member tier. Restore connectivity and check your subscription status to recover paid access.

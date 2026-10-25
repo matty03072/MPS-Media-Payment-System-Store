@@ -1,6 +1,6 @@
 # MPS — Media Payment System
 
-Community App Store · Current release: **1.0.2**
+Community App Store · Current release: **1.0.3**
 
 Available through the MPS community app store — separate from the official Umbrel App Store.
 
@@ -12,7 +12,7 @@ After you configure your services, invited members can sign up and connect their
 
 Members can manage their membership, open Emby and discover/request content through Ombi from the same portal. MPS coordinates the services; it does not replace them or automatically configure the administrator's service connections.
 
-See the installation and public-access limitations below, and the [1.0.2 release notes](docs/RELEASE-1.0.2.md).
+See the installation and public-access limitations below, and the [1.0.3 release notes](docs/RELEASE-1.0.3.md).
 
 ## Custom branding
 
@@ -56,21 +56,25 @@ default configuration. An official-store submission is under review; this commun
 
 Application source is private. This repository contains store packaging, documentation and presentation assets only—not application source.
 
-[Release notes](docs/RELEASE-1.0.2.md) · [Support](https://github.com/matty03072/MPS-Media-Payment-System-Store/issues)
+[Release notes](docs/RELEASE-1.0.3.md) · [Support](https://github.com/matty03072/MPS-Media-Payment-System-Store/issues)
 
 Container checks do not constitute an umbrelOS installation test. The first
 install, UI setup/MFA, reboot and backup/restore still need testing on your Umbrel.
 Back up the entire app data folder, including all configuration. Do not assume automatic migration to a future production app ID.
 
-## Update to 1.0.2
+## Update to 1.0.3
 
 Use **Update** in Umbrel for your existing MPS installation. **Do not uninstall or delete the app to upgrade.** Back up the complete app data folder first. Existing app identity, data locations and licensing terms are unchanged.
+
+## Installation activity
+
+Free and licensed installations periodically report an installation identifier, app version and activity time to the publisher to measure active installations. No member details, media activity or service credentials are included. Reporting failures do not change free-tier access. See the [privacy notice](https://members.streaminghome.app/mps/privacy).
 
 ## Connected services
 
 MPS includes Sonarr/Radarr connection settings, member download and import progress, optional Emby library updates and separate service configuration pages. Configure your own services under **Configuration → Connected services**; no live-site credentials are included.
 
-## Application licensing (1.0.2)
+## Application licensing (1.0.3)
 
 Ten enabled media members are free, including administrators with linked media identities. Larger installations require a GBP 5/month
 unlock covering three applications. Back up the entire state directory before
