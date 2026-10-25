@@ -4,8 +4,7 @@
 
 The [software licence](../LICENSE) permits personal and business operation,
 including charging your own members. Reselling MPS or a rebranded derivative
-requires separate written permission. The existing no-resale licence remains unchanged. Version 1.0.2 ships compiled
-application modules; source is private. This is not an OSI-approved open-source licence. Third-party licences and rights already granted
+requires separate written permission. The existing no-resale licence remains unchanged. Application source is private. This is not an OSI-approved open-source licence. Third-party licences and rights already granted
 for older releases remain unchanged.
 
 An MPS subscription is separate from the Stripe/PayPal subscriptions you collect
@@ -20,35 +19,18 @@ administrative licence management and recovery remain available.
 2. Verify your email and enrol an authenticator for mandatory MFA.
 3. Accept the displayed terms and purchase the monthly subscription.
 4. After payment verification, an unlock code is emailed automatically.
-5. In your installation, open **Licence** and submit that code. Each installation
-   has a persistent UUID. Preserve `/state` when updating or migrating.
+5. In your installation, open **Licence** and submit that code. Keep your complete app data when updating or migrating.
 
-Never publish your unlock code. Your app contacts the publisher's HTTPS licence
-service; protocol v2 verifies installation-key proof and rotating credentials,
-then issues a short-lived Ed25519-signed lease bound to a fresh request. Paid
-access requires an online check after each process restart.
-Production clients reject sandbox leases. The client does not contain the
-publisher's private signing key, Stripe credentials or customer database.
+Never publish your unlock code. An internet connection is required to activate and periodically verify paid access, including after restarting the application.
 
 ## Checks, fallback and removals
 
-- Check-in is normally every 15 minutes; a valid lease lasts at most one hour.
-- A temporary connection failure uses the existing valid lease. Once it expires,
-  the application returns to the ten-member tier.
+- If paid access cannot be verified, the application may return to the ten-member tier. Restore connectivity and check your subscription status to recover paid access.
 - Failed payment or an ended subscription also returns the app to the ten-member
   tier. The ten oldest eligible enabled members retain MPS access. Other account
   records remain stored; they are not deleted.
-- Licence fallback disables excess managed or explicitly linked Emby access,
-  retaining member data and unrelated remote policy. Access is restored when
-  licensing and membership/server permissions allow it. Unlinked, ambiguous and
-  remote-administrator identities are not changed automatically. Direct Ombi
-  accounts are not disabled by this change; independent service access remains
-  controlled by that service. See the licence fallback behaviour above.
-- A fourth registration is refused. Remove an old application in your licence
-  account to free a slot. Removal disables that old application on its next
-  check; an offline instance cannot retain paid access beyond lease expiry.
-- A received disabled state remains disabled after its lease expires. Normal
-  app routes and worker activity stop; licence recovery and data remain available.
+- When access returns to the free tier, excess linked Emby access is disabled. Access can be restored when licensing and membership permissions allow it. Direct Ombi access is managed separately and is not disabled by MPS.
+- Up to three applications can be registered. Remove an old application in your licence account to free a slot. Removal disables that application once the change takes effect; its data and licence recovery remain available.
 - Removing a registration is **not** subscription cancellation. Use **Cancel subscription**
   in the licence account to stop renewal. Payment-method management is separate.
 
@@ -65,23 +47,10 @@ of that payment, including monthly renewals. Access still lasts until period end
 Your account displays cancellation and refund processing status. Statutory rights
 are unaffected. A subsequent purchase creates a new order and unlock code.
 
-The signed-in support form accepts your reply email and issue. Requests are sent
-to the operator through a private destination, with CSRF, MFA, rate limits,
-anti-bot checks and an encrypted retryable outbox. Never submit passwords or keys.
+Use the signed-in support form for account or subscription help. Never submit passwords, unlock codes or other secret credentials.
 
 ## Upgrades
 
-Back up the complete `/state` directory (database, keys and installation identity)
-before installing the licensing build. Do not delete/reinstall to upgrade.
+Back up the complete app data folder before updating. Do not delete/reinstall to upgrade.
 Installations over the free allowance need an active unlock subscription to keep
 all enabled members' MPS access. Review these changes before upgrading.
-
-## Release verification
-
-Version 1.0.0 is the licensing release. Automated tests
-cover signatures, invalid/test/expired leases, member boundaries, MFA/CSRF,
-webhook replay, email retries and registration limits. On 24 October 2026, an isolated Stripe sandbox purchase verified genuine network
-webhook delivery/signatures, automatic issuance, inbox receipt and activation.
-The receiver and isolated worker were bridged by exporting the authenticated event;
-this was not a production purchase. Real sandbox period-end cancellation and a
-full refund also succeeded. Seller contact and policy disclosures are published on the purchase site.

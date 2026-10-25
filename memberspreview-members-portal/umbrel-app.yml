@@ -13,16 +13,16 @@ description: >-
 
 
   Emby, Ombi, SMTP and billing services require your own servers or accounts.
-  No integrations are enabled automatically. This preview has not been certified
+  No integrations are enabled automatically. This community package has not been certified
   for live billing. Public member access requires separate HTTPS deployment;
   the default package stays protected by Umbrel login.
 
   Includes ten enabled members free; linked media administrators count toward this limit. Larger installations require a
   GBP 5/month MPS unlock subscription for up to three applications. The licence
-  service requires verified email and MFA. MPS no-resale terms apply; application source is private and the container ships compiled modules;
+  service requires verified email and MFA. MPS no-resale terms apply; application source is private;
   operating paid membership services is permitted. Back up before upgrading.
 
-releaseNotes: "MPS 1.0.2 distributes compiled application modules instead of readable Python source. Existing data paths, licence behaviour and setup protection are unchanged. Back up the entire app data before updating and update in place; do not uninstall. Windows and Linux installer downloads are not included. Release notes: https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.2.md"
+releaseNotes: "MPS 1.0.2 updates application distribution and store documentation. Existing features, licensing terms and app data locations are unchanged. Back up the complete app data folder and update in place; do not uninstall. Release notes: https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.2.md"
 developer: "matty03072"
 website: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
 dependencies: []

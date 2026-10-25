@@ -1,16 +1,21 @@
-# MPS 1.0.2 — compiled container distribution
+# MPS 1.0.2
 
-- Application Python modules now ship as compiled native extensions, not readable Python source or bytecode.
-- Both Linux AMD64 and ARM64 are supported. First-party source and generated C are excluded from every runtime image layer.
-- Web/worker startup, setup protection and persistent configuration/key retention are verified against the compiled runtime.
-- Existing licence behaviour and data paths are unchanged. Back up the full app data/state directory before updating; update in place rather than uninstalling.
-- The source repository is private. Compilation does not prevent reverse engineering or revoke previously downloaded copies.
-- No Windows/Linux installer downloads are included; earlier private installer builds are not source-free.
+Available through the MPS community app store for umbrelOS, with support for AMD64 and ARM64 systems.
 
-This release is distributed as a container through the MPS community Umbrel store. Official store acceptance and actual on-device Umbrel upgrade remain separate from container verification.
+## Release information
 
-## Verified distribution
+- Updated application distribution and store documentation.
+- Existing membership features, licensing terms and app data locations are unchanged.
+- Application source remains private. This repository provides store packaging, documentation and presentation assets.
 
-Image: `ghcr.io/matty03072/mps-media-payment-system:v1.0.2@sha256:900a2bfe343291f7534b7fa99f34724794d914a629b48cf8f3036c7e4b6dcbd3`.
+## Updating
 
-Native AMD64 and ARM64 builds, whole-layer source audits, anonymous published pulls, setup protection, application regression suites, web/worker startup, worker heartbeat and restart/key retention all passed. No physical Umbrel installation or update was performed.
+Back up the complete app data folder, then use **Update** in Umbrel. **Do not uninstall or delete the app to upgrade.** Keep your existing app data when moving or restoring an installation.
+
+Review the [licensing guide](APPLICATION-LICENSING.md) and [deployment information](../README.md#deployment-information) before updating.
+
+## Availability
+
+This release is supplied through the community Umbrel store; standalone installer downloads are not included. Official Umbrel App Store acceptance is separate and remains pending.
+
+Automated container checks passed for both supported architectures. An on-device Umbrel installation or upgrade has not been verified.
