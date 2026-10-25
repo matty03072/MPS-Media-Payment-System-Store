@@ -12,13 +12,13 @@ After services are configured and an invited member signs up and verifies their 
 
 Members can manage their membership, open Emby and discover/request content through Ombi from the same portal. MPS coordinates the services; it does not replace them or automatically configure the administrator's service connections.
 
-Read the [full application overview and automation workflow](https://github.com/matty03072/MPS-Media-Payment-System#automated-account-creation), including the default preview's public-access and payment-callback limitations.
+See the installation and public-access limitations below, and the [1.0.2 release notes](docs/RELEASE-1.0.2.md).
 
 ## Custom branding
 
 Administrators can open **Configuration → Branding** to upload their logo and set their own site name. The site and new emails use the saved branding, with a linked MPS — Media Payment System credit retained in the footer.
 
-![Branding settings](https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/88a980b778f17858f147c98e0e09bb3073a637b8/docs/screenshots/branding-settings.png)
+![Branding settings](assets/branding-settings.png)
 
 ## Screenshots
 
@@ -26,15 +26,15 @@ Live application views with temporary MPS branding; names and emails removed bef
 
 ### Administrator overview
 
-![MPS administrator overview](https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png)
+![MPS administrator overview](assets/admin-overview.png)
 
 ### Member dashboard
 
-![MPS member dashboard](https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png)
+![MPS member dashboard](assets/member-dashboard.png)
 
 ### Member request statuses
 
-![MPS member request statuses](https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/44994dfc2fd1fa7b1734ef5b0bbf7580a848de84/docs/screenshots/member-request-status-redacted-v2.png)
+![MPS member request statuses](assets/member-request-status-redacted-v2.png)
 
 ## Install
 1. In umbrelOS, open **App Store → Community App Stores** (usually in the
@@ -58,7 +58,9 @@ Use test integrations only. Default Umbrel authentication protects every route;
 public invitations and external payment callbacks are not supported by this
 preview configuration. An official-store submission is under review; this community store is separate.
 
-Source and build checks: https://github.com/matty03072/MPS-Media-Payment-System
+Application source is private. The public container ships compiled native MPS modules. This repository contains store packaging, documentation and presentation assets only—not application source.
+
+[Release notes](docs/RELEASE-1.0.2.md) · [Support](https://github.com/matty03072/MPS-Media-Payment-System-Store/issues)
 
 Container checks do not constitute an umbrelOS installation test. The first
 install, UI setup/MFA, reboot and backup/restore still need testing on your Umbrel.
@@ -82,7 +84,7 @@ and Emby server editing/library refresh. Configure your own services under
 Update the existing app in place. No schema migration is needed.
 
 
-## Application licensing (1.0.1)
+## Application licensing (1.0.2)
 
 Ten enabled media members are free, including administrators with linked media identities. Larger installations require a GBP 5/month
 unlock covering three applications. Back up the entire state directory before
@@ -91,9 +93,9 @@ remain stored but only the ten oldest eligible enabled members retain MPS access
 Excess linked Emby access is disabled on downgrade and restored when licensing
 and membership permissions allow it. Direct Ombi access is not disabled by MPS.
 Paid access requires an online check after restart.
-New source-available no-resale terms apply; paid membership operations are permitted.
+The existing [MPS no-resale licence](LICENSE) remains unchanged; paid membership operations are permitted. Application source is no longer publicly distributed. Previous licence grants remain unchanged.
 
-[Licensing and upgrade guide](https://github.com/matty03072/MPS-Media-Payment-System/blob/v1.0.1/docs/APPLICATION-LICENSING.md).
+[Licensing and upgrade guide](docs/APPLICATION-LICENSING.md).
 [Purchase and signed-in support](https://members.streaminghome.app/mps).
 Cancellation stops renewal at period end. Requests within 14 days of the latest
 payment receive a full refund; paid access remains until period end.
