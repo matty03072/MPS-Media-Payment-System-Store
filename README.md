@@ -6,6 +6,16 @@ Community App Store · Current release: **1.0.3**
 
 Available through the MPS community app store — separate from the official Umbrel App Store.
 
+## Windows and Linux downloads
+
+**MPS 1.0.3 — installer revision 2** is available now:
+
+- [Windows x64 installer](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.3-r2/MPS-1.0.3-windows-x64-setup.exe)
+- [Ubuntu 24.04 x64 archive](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.3-r2/MPS-1.0.3-linux-x64.tar.gz)
+- [Checksums and installation notes](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.3-r2)
+
+Fresh interactive Windows installs offer SQLite, SQL Server or PostgreSQL. Updating an existing installation preserves its database and configuration. Windows is unsigned; Linux requires systemd and CPython 3.12. Back up your complete data folder before updating.
+
 ## What is MPS? Emby subscription and payment management
 
 **MPS lets you charge users a recurring subscription for access to your Emby servers, with integrated payments and automatic member account setup.**
