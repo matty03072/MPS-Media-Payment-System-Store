@@ -8,7 +8,17 @@ Available through the MPS community app store — separate from the official Umb
 
 MPS brings media memberships, payments and connected service accounts into one self-hosted portal. It integrates **Emby, Emby Connect, Ombi, Stripe, PayPal and SMTP email** so administrators can manage invitations, plans, permissions and member access together.
 
-After you configure your services, invited members can sign up and connect their media accounts. Access depends on membership permissions. Emby Connect may require separate email verification.
+### Automatic setup from one invitation
+
+Once you have configured your connected services, the member completes their invitation and verifies their email. MPS then automatically:
+
+- **Sets up Emby Connect** by creating or linking the member’s account using their signup details.
+- **Creates their accounts on the invited Emby servers**, applies the assigned library permissions and links those servers to their Emby Connect account.
+- **Creates or links their Ombi account** so they can discover and request content from the portal.
+
+**No routine manual account creation, server linking or Ombi setup is required for each member.** The administrator configures the service connections once; MPS handles the normal member setup automatically.
+
+Access follows the invitation’s permissions and membership/payment requirements. Emby Connect may ask the member to verify their email. Conflicting existing accounts or service errors can require attention; MPS does not bypass those checks.
 
 Members can manage their membership, open Emby and discover/request content through Ombi from the same portal. MPS coordinates the services; it does not replace them or automatically configure the administrator's service connections.
 

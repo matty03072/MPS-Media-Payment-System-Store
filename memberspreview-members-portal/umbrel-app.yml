@@ -12,6 +12,12 @@ description: >-
   Umbrel, then choose your permanent owner account and enrol an authenticator.
 
 
+  After a member completes their invitation and verifies their email, MPS automatically
+  creates or links their Emby Connect account, sets up their invited Emby server accounts
+  and library access, links the servers to Emby Connect, and creates or links their Ombi account.
+  Once your service connections are configured, routine member setup needs no manual administration.
+  Membership/payment requirements still apply; provider email verification or conflicting accounts may need attention.
+
   Emby, Ombi, SMTP and billing services require your own servers or accounts.
   No integrations are enabled automatically. This community package has not been certified
   for live billing. Public member access requires separate HTTPS deployment;
