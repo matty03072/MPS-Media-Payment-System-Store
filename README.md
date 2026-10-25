@@ -61,6 +61,35 @@ Live application views with temporary MPS branding; names and emails removed bef
 ![MPS member request statuses](assets/member-request-status-redacted-v2.png)
 
 ## Install
+
+Choose your platform below. Windows and Linux downloads are **MPS 1.0.3, installer revision 2**.
+
+### Windows x64
+
+1. [Download the Windows installer](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.3-r2/MPS-1.0.3-windows-x64-setup.exe).
+2. Run the EXE as administrator. The installer is unsigned.
+3. On a fresh interactive installation, choose **SQLite**, **Microsoft SQL Server** or **PostgreSQL**. External databases must already be provisioned; see the [setup requirements](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.3-r2).
+4. Open [http://localhost:8099](http://localhost:8099) on the installed computer and follow first-run setup.
+
+For an existing installation, back up the complete data folder and run the new installer over the current copy. It retains the database, configuration and encryption key; it does not switch databases. SQLite normally uses `C:\ProgramData\MPS\data\members.sqlite3`.
+
+### Linux — Ubuntu 24.04 x64
+
+1. [Download the Linux archive](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.3-r2/MPS-1.0.3-linux-x64.tar.gz). Requires **systemd and CPython 3.12**.
+2. Extract the archive, open a terminal in the extracted directory and run:
+
+   ```bash
+   sudo bash install.sh
+   ```
+
+3. Open [http://localhost:8099](http://localhost:8099) on the installed computer and follow first-run setup.
+
+Back up the complete data folder before updating an existing installation. Standalone installers do not automatically configure a public domain, HTTPS or firewall access.
+
+[Revision 2 release notes and SHA-256 checksums](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.3-r2)
+
+### umbrelOS
+
 1. In umbrelOS, open **App Store → Community App Stores** (usually in the
    App Store menu).
 2. Add `https://github.com/matty03072/MPS-Media-Payment-System-Store`.
@@ -69,7 +98,7 @@ Live application views with temporary MPS branding; names and emails removed bef
    `owner` and the app password shown by Umbrel.
 5. Create your permanent owner account and enrol MFA with an authenticator.
 
-## Deployment information
+## Umbrel deployment information
 App ID: `memberspreview-members-portal`. Port: `18099` (must be unused).
 Data is separate from any future official app. No live-site configuration,
 production database, credentials or member records are included.
@@ -86,7 +115,7 @@ Container checks do not constitute an umbrelOS installation test. The first
 install, UI setup/MFA, reboot and backup/restore still need testing on your Umbrel.
 Back up the entire app data folder, including all configuration. Do not assume automatic migration to a future production app ID.
 
-## Update to 1.0.3
+## Update Umbrel to 1.0.3
 
 Use **Update** in Umbrel for your existing MPS installation. **Do not uninstall or delete the app to upgrade.** Back up the complete app data folder first. Existing app identity, data locations and licensing terms are unchanged.
 
