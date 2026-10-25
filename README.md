@@ -1,10 +1,12 @@
 # MPS — Media Payment System
 
+**Self-hosted Emby subscription management, billing and automated user setup for umbrelOS.**
+
 Community App Store · Current release: **1.0.3**
 
 Available through the MPS community app store — separate from the official Umbrel App Store.
 
-## What is MPS?
+## What is MPS? Emby subscription and payment management
 
 **MPS lets you charge users a recurring subscription for access to your Emby servers, with integrated payments and automatic member account setup.**
 
