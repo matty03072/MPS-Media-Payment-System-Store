@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: media
 name: MPS — Media Payment System
-version: "1.0.1"
+version: "1.0.2"
 tagline: Media, memberships and payments in one place
 description: >-
   MPS — Media Payment System. Manage media-server invitations, members and optional billing integrations.
@@ -19,24 +19,24 @@ description: >-
 
   Includes ten enabled members free; linked media administrators count toward this limit. Larger installations require a
   GBP 5/month MPS unlock subscription for up to three applications. The licence
-  service requires verified email and MFA. Source-available no-resale terms apply;
+  service requires verified email and MFA. MPS no-resale terms apply; application source is private and the container ships compiled modules;
   operating paid membership services is permitted. Back up before upgrading.
 
-releaseNotes: "Licensing security update: installation proofs, rotating sessions, protected revocation state and trusted lease expiry. Paid access requires an online check after restart. Licence downgrade now disables excess linked Emby access while retaining member data; linked media administrators count toward the limit. Back up the entire app data before updating and preserve the existing installation/state. Windows and Linux installer downloads are not included. Release notes: https://github.com/matty03072/MPS-Media-Payment-System/releases/tag/v1.0.1"
+releaseNotes: "MPS 1.0.2 distributes compiled application modules instead of readable Python source. Existing data paths, licence behaviour and setup protection are unchanged. Back up the entire app data before updating and update in place; do not uninstall. Windows and Linux installer downloads are not included. Release notes: https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.2.md"
 developer: "matty03072"
-website: "https://github.com/matty03072/MPS-Media-Payment-System"
+website: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
 dependencies: []
-repo: "https://github.com/matty03072/MPS-Media-Payment-System"
-support: "https://github.com/matty03072/MPS-Media-Payment-System/issues"
+repo: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
+support: "https://github.com/matty03072/MPS-Media-Payment-System-Store/issues"
 port: 18099
 gallery:
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/admin-overview.png
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/bd5d8035ab55c8f5cccd6db39d0d704b1474beb9/docs/screenshots/member-dashboard.png
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/44994dfc2fd1fa7b1734ef5b0bbf7580a848de84/docs/screenshots/member-request-status-redacted-v2.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/ff74160ea5f9c0c3fe4c8e344d61e62682cd13cc/assets/admin-overview.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/ff74160ea5f9c0c3fe4c8e344d61e62682cd13cc/assets/member-dashboard.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/ff74160ea5f9c0c3fe4c8e344d61e62682cd13cc/assets/member-request-status-redacted-v2.png
 path: /setup
 defaultUsername: owner
 defaultPassword: ""
 deterministicPassword: true
 submitter: "matty03072"
 submission: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
-icon: https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System/6267fdd370c483694171a5841769ee446261e45b/static/mps-icon.png
+icon: https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/ff74160ea5f9c0c3fe4c8e344d61e62682cd13cc/assets/mps-icon.png
