@@ -6,7 +6,9 @@ Available through the MPS community app store — separate from the official Umb
 
 ## What is MPS?
 
-MPS brings media memberships, payments and connected service accounts into one self-hosted portal. It integrates **Emby, Emby Connect, Ombi, Stripe, PayPal and SMTP email** so administrators can manage invitations, plans, permissions and member access together.
+**MPS lets you charge users a recurring subscription for access to your Emby servers, with integrated payments and automatic member account setup.**
+
+Manage Emby subscriptions, payments and connected service accounts from one self-hosted portal. It integrates **Emby, Emby Connect, Ombi, Stripe, PayPal and SMTP email** so administrators can manage invitations, plans, permissions and member access together.
 
 ### Automatic setup from one invitation
 
