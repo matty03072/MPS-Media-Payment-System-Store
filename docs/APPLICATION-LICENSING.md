@@ -15,7 +15,7 @@ administrative licence management and recovery remain available.
 
 ## Activation
 
-1. Create a licence account at https://members.streaminghome.app/mps.
+1. Create a licence account at https://mediapaymentsystem.app/mps.
 2. Verify your email and enrol an authenticator for mandatory MFA.
 3. Accept the displayed terms and purchase the monthly subscription.
 4. After payment verification, an unlock code is emailed automatically.
@@ -25,7 +25,7 @@ Never publish your unlock code. An internet connection is required to activate a
 
 ## Installation activity
 
-Free and licensed installations periodically report an installation identifier, app version and activity time to help measure active installations. Reports do not include member details, media activity or service credentials. This reporting is separate from subscription verification; reporting failures do not change free-tier access. See the [privacy notice](https://members.streaminghome.app/mps/privacy).
+Free and licensed installations periodically report an installation identifier, app version and activity time to help measure active installations. Reports do not include member details, media activity or service credentials. This reporting is separate from subscription verification; reporting failures do not change free-tier access. See the [privacy notice](https://mediapaymentsystem.app/mps/privacy).
 
 ## Checks, fallback and removals
 

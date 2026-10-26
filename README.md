@@ -1,5 +1,7 @@
 # MPS — Media Payment System
 
+[Official MPS website](https://mediapaymentsystem.app/) · [Downloads](https://mediapaymentsystem.app/downloads)
+
 **Self-hosted Emby subscription management, billing and automated user setup for umbrelOS.**
 
 Community App Store · Current release: **1.0.3**
@@ -121,7 +123,7 @@ Use **Update** in Umbrel for your existing MPS installation. **Do not uninstall 
 
 ## Installation activity
 
-Free and licensed installations periodically report an installation identifier, app version and activity time to the publisher to measure active installations. No member details, media activity or service credentials are included. Reporting failures do not change free-tier access. See the [privacy notice](https://members.streaminghome.app/mps/privacy).
+Free and licensed installations periodically report an installation identifier, app version and activity time to the publisher to measure active installations. No member details, media activity or service credentials are included. Reporting failures do not change free-tier access. See the [privacy notice](https://mediapaymentsystem.app/mps/privacy).
 
 ## Connected services
 
@@ -139,6 +141,6 @@ Paid access requires an online check after restart.
 The existing [MPS no-resale licence](LICENSE) remains unchanged; paid membership operations are permitted. Application source is no longer publicly distributed. Previous licence grants remain unchanged.
 
 [Licensing and upgrade guide](docs/APPLICATION-LICENSING.md).
-[Purchase and signed-in support](https://members.streaminghome.app/mps).
+[Purchase and signed-in support](https://mediapaymentsystem.app/mps).
 Cancellation stops renewal at period end. Requests within 14 days of the latest
 payment receive a full refund; paid access remains until period end.
