@@ -40,9 +40,9 @@ repo: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
 support: "https://github.com/matty03072/MPS-Media-Payment-System-Store/issues"
 port: 18099
 gallery:
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/main/assets/jellyfin-settings-104.png
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/main/assets/jellyfin-admin-guide-104.png
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/main/assets/jellyfin-member-guide-104.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/159013ce370bcc6c0399b36636a77bbf3228c549/assets/jellyfin-settings-104.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/159013ce370bcc6c0399b36636a77bbf3228c549/assets/jellyfin-admin-guide-104.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/159013ce370bcc6c0399b36636a77bbf3228c549/assets/jellyfin-member-guide-104.png
 path: /setup
 defaultUsername: owner
 defaultPassword: ""
