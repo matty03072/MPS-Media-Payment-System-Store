@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: media
 name: MPS — Media Payment System
-version: "1.0.3"
+version: "1.0.4"
 tagline: Media, memberships and payments in one place
 description: >-
   MPS — Media Payment System. Manage media-server invitations, members and optional billing integrations.
@@ -13,12 +13,12 @@ description: >-
 
 
   After a member completes their invitation and verifies their email, MPS automatically
-  creates or links their Emby Connect account, sets up their invited Emby server accounts
-  and library access, links the servers to Emby Connect, and creates or links their Ombi account.
+  sets up their invited Emby and Jellyfin server accounts with selected library access,
+  uses Emby Connect only when Emby access needs it, and creates or links their Ombi account.
   Once your service connections are configured, routine member setup needs no manual administration.
   Membership/payment requirements still apply; provider email verification or conflicting accounts may need attention.
 
-  Emby, Ombi, SMTP and billing services require your own servers or accounts.
+  Emby, Jellyfin, Ombi, SMTP and billing services require your own servers or accounts.
   No integrations are enabled automatically. This community package has not been certified
   for live billing. Public member access requires separate HTTPS deployment;
   the default package stays protected by Umbrel login.
@@ -32,7 +32,7 @@ description: >-
   to measure active installations. No member details, media activity or service credentials are included.
   Reporting failures do not change free-tier access.
 
-releaseNotes: "Adds installation activity reporting for free and licensed installations. Reports an installation identifier, app version and activity time only; no member details, media activity or service credentials. Reporting failures do not change free-tier access. Back up app data and update in place; do not uninstall. https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.3.md"
+releaseNotes: "New 1.0.4 release: adds Jellyfin server accounts and per-server access, separate Sonarr/Radarr Configuration, optional Media Managers, and updated member/admin guides. Existing managed 1.0.3 installations update in place; back up app data and do not uninstall. https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.4.md"
 developer: "matty03072"
 website: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
 dependencies: []
@@ -40,9 +40,9 @@ repo: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
 support: "https://github.com/matty03072/MPS-Media-Payment-System-Store/issues"
 port: 18099
 gallery:
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/ff74160ea5f9c0c3fe4c8e344d61e62682cd13cc/assets/admin-overview.png
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/ff74160ea5f9c0c3fe4c8e344d61e62682cd13cc/assets/member-dashboard.png
-  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/ff74160ea5f9c0c3fe4c8e344d61e62682cd13cc/assets/member-request-status-redacted-v2.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/main/assets/jellyfin-settings-104.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/main/assets/jellyfin-admin-guide-104.png
+  - https://raw.githubusercontent.com/matty03072/MPS-Media-Payment-System-Store/main/assets/jellyfin-member-guide-104.png
 path: /setup
 defaultUsername: owner
 defaultPassword: ""

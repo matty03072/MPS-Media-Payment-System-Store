@@ -2,82 +2,81 @@
 
 [Official MPS website](https://mediapaymentsystem.app/) · [Downloads](https://mediapaymentsystem.app/downloads)
 
-**Self-hosted Emby subscription management, billing and automated user setup for umbrelOS.**
+**Self-hosted Emby and Jellyfin membership management, billing and automated account setup.**
 
-Community App Store · Current release: **1.0.3**
+Community App Store · Current release: **1.0.4**
 
 Available through the MPS community app store — separate from the official Umbrel App Store.
 
 ## Windows and Linux downloads
 
-**MPS 1.0.3 — installer revision 2** is available now:
+**MPS 1.0.4** is available now:
 
-- [Windows x64 installer](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.3-r2/MPS-1.0.3-windows-x64-setup.exe)
-- [Ubuntu 24.04 x64 archive](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.3-r2/MPS-1.0.3-linux-x64.tar.gz)
-- [Checksums and installation notes](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.3-r2)
+- [Windows x64 installer](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.4/MPS-1.0.4-windows-x64-setup.exe)
+- [Ubuntu 24.04 x64 archive](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.4/MPS-1.0.4-linux-x64.tar.gz)
+- [Checksums and installation notes](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.4)
 
 Fresh interactive Windows installs offer SQLite, SQL Server or PostgreSQL. Updating an existing installation preserves its database and configuration. Windows is unsigned; Linux requires systemd and CPython 3.12. Back up your complete data folder before updating.
 
-## What is MPS? Emby subscription and payment management
+## What is MPS? Media subscription and payment management
 
-**MPS lets you charge users a recurring subscription for access to your Emby servers, with integrated payments and automatic member account setup.**
+**MPS manages memberships for your Emby and Jellyfin servers, with optional subscription payments and automated member account setup.**
 
-Manage Emby subscriptions, payments and connected service accounts from one self-hosted portal. It integrates **Emby, Emby Connect, Ombi, Stripe, PayPal and SMTP email** so administrators can manage invitations, plans, permissions and member access together.
+Manage media access, payments and connected service accounts from one self-hosted portal. It integrates **Emby, Jellyfin, Emby Connect, Ombi, Sonarr, Radarr, Stripe, PayPal and SMTP email** so administrators can manage invitations, plans, permissions and member access together.
 
 ### Automatic setup from one invitation
 
 Once you have configured your connected services, the member completes their invitation and verifies their email. MPS then automatically:
 
-- **Sets up Emby Connect** by creating or linking the member’s account using their signup details.
-- **Creates their accounts on the invited Emby servers**, applies the assigned library permissions and links those servers to their Emby Connect account.
+- **Creates accounts on the selected Emby and Jellyfin servers**, applies their assigned library and optional Live TV permissions, and shows only their allowed server links.
+- **Sets up Emby Connect when Emby access needs it**; Jellyfin uses local server accounts and does not require Emby Connect.
 - **Creates or links their Ombi account** so they can discover and request content from the portal.
 
 **No routine manual account creation, server linking or Ombi setup is required for each member.** The administrator configures the service connections once; MPS handles the normal member setup automatically.
 
 Access follows the invitation’s permissions and membership/payment requirements. Emby Connect may ask the member to verify their email. Conflicting existing accounts or service errors can require attention; MPS does not bypass those checks.
 
-Members can manage their membership, open Emby and discover/request content through Ombi from the same portal. MPS coordinates the services; it does not replace them or automatically configure the administrator's service connections.
+Members can manage their membership, open assigned Emby and Jellyfin servers and discover/request content through Ombi from the same portal. MPS coordinates the services; it does not replace them or automatically configure the administrator's service connections.
 
-See the installation and public-access limitations below, and the [1.0.3 release notes](docs/RELEASE-1.0.3.md).
+See the installation and public-access limitations below, and the [1.0.4 release notes](docs/RELEASE-1.0.4.md).
 
 ## Custom branding
 
 Administrators can open **Configuration → Branding** to upload their logo and set their own site name. The site and new emails use the saved branding, with a linked MPS — Media Payment System credit retained in the footer.
 
-![Branding settings](assets/branding-settings.png)
 
-## Screenshots
+## 1.0.4 interface previews
 
-Live application views with temporary MPS branding; names and emails removed before blurring. No live-site data or configuration is included in the install.
+Captured from a disposable 1.0.4 customer-app fixture with example names and no live service accounts, credentials or customer data. Actual choices depend on your configured services and permissions.
 
-### Administrator overview
+### Jellyfin server configuration
 
-![MPS administrator overview](assets/admin-overview.png)
+![Jellyfin server configuration in MPS 1.0.4](assets/jellyfin-settings-104.png)
 
-### Member dashboard
+### Administrator Jellyfin guide
 
-![MPS member dashboard](assets/member-dashboard.png)
+![Administrator guide for connecting Jellyfin servers](assets/jellyfin-admin-guide-104.png)
 
-### Member request statuses
+### Member Jellyfin guide
 
-![MPS member request statuses](assets/member-request-status-redacted-v2.png)
+![Member guide for watching Jellyfin](assets/jellyfin-member-guide-104.png)
 
 ## Install
 
-Choose your platform below. Windows and Linux downloads are **MPS 1.0.3, installer revision 2**.
+Choose your platform below. Windows and Linux downloads are the **new MPS 1.0.4 release**. Existing managed 1.0.3 installations upgrade in place; do not uninstall.
 
 ### Windows x64
 
-1. [Download the Windows installer](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.3-r2/MPS-1.0.3-windows-x64-setup.exe).
+1. [Download the Windows installer](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.4/MPS-1.0.4-windows-x64-setup.exe).
 2. Run the EXE as administrator. The installer is unsigned.
-3. On a fresh interactive installation, choose **SQLite**, **Microsoft SQL Server** or **PostgreSQL**. External databases must already be provisioned; see the [setup requirements](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.3-r2).
+3. On a fresh interactive installation, choose **SQLite**, **Microsoft SQL Server** or **PostgreSQL**. External databases must already be provisioned; see the [setup requirements](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.4).
 4. Open [http://localhost:8099](http://localhost:8099) on the installed computer and follow first-run setup.
 
 For an existing installation, back up the complete data folder and run the new installer over the current copy. It retains the database, configuration and encryption key; it does not switch databases. SQLite normally uses `C:\ProgramData\MPS\data\members.sqlite3`.
 
 ### Linux — Ubuntu 24.04 x64
 
-1. [Download the Linux archive](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.3-r2/MPS-1.0.3-linux-x64.tar.gz). Requires **systemd and CPython 3.12**.
+1. [Download the Linux archive](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.4/MPS-1.0.4-linux-x64.tar.gz). Requires **systemd and CPython 3.12**.
 2. Extract the archive, open a terminal in the extracted directory and run:
 
    ```bash
@@ -88,7 +87,7 @@ For an existing installation, back up the complete data folder and run the new i
 
 Back up the complete data folder before updating an existing installation. Standalone installers do not automatically configure a public domain, HTTPS or firewall access.
 
-[Revision 2 release notes and SHA-256 checksums](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.3-r2)
+[1.0.4 release notes and SHA-256 checksums](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.4)
 
 ### umbrelOS
 
@@ -111,13 +110,13 @@ default configuration. An official-store submission is under review; this commun
 
 Application source is private. This repository contains store packaging, documentation and presentation assets only—not application source.
 
-[Release notes](docs/RELEASE-1.0.3.md) · [Support](https://github.com/matty03072/MPS-Media-Payment-System-Store/issues)
+[Release notes](docs/RELEASE-1.0.4.md) · [Support](https://github.com/matty03072/MPS-Media-Payment-System-Store/issues)
 
 Container checks do not constitute an umbrelOS installation test. The first
 install, UI setup/MFA, reboot and backup/restore still need testing on your Umbrel.
 Back up the entire app data folder, including all configuration. Do not assume automatic migration to a future production app ID.
 
-## Update Umbrel to 1.0.3
+## Update an existing Umbrel installation to 1.0.4
 
 Use **Update** in Umbrel for your existing MPS installation. **Do not uninstall or delete the app to upgrade.** Back up the complete app data folder first. Existing app identity, data locations and licensing terms are unchanged.
 
@@ -127,9 +126,9 @@ Free and licensed installations periodically report an installation identifier, 
 
 ## Connected services
 
-MPS includes Sonarr/Radarr connection settings, member download and import progress, optional Emby library updates and separate service configuration pages. Configure your own services under **Configuration → Connected services**; no live-site credentials are included.
+MPS includes separate Sonarr/Radarr settings, member download and import progress, optional Emby library scans, and administrator Media Managers for connected services. Configure your own services under **Configuration**; no live-site credentials are included.
 
-## Application licensing (1.0.3)
+## Application licensing
 
 Ten enabled media members are free, including administrators with linked media identities. Larger installations require a GBP 5/month
 unlock covering three applications. Back up the entire state directory before
