@@ -45,6 +45,82 @@ See the installation and public-access limitations below, and the [1.0.4 release
 Administrators can open **Configuration → Branding** to upload their logo and set their own site name. The site and new emails use the saved branding, with a linked MPS — Media Payment System credit retained in the footer.
 
 
+## Interface gallery
+
+These are AI-edited previews based on an owner installation, not pixel-exact captures of the released customer app. Branding, account details, titles and artwork have been obscured for privacy. Available screens and actions depend on your version, connected services and permissions.
+
+[Member features](#member-features) · [Administrator tools](#administrator-tools)
+
+### Member features
+
+#### Membership dashboard
+
+A personal home page showing membership status and shortcuts to assigned Emby and Jellyfin servers. Members can reach discovery, linked accounts, guides and account-security settings from the sidebar.
+
+![Membership dashboard — edited MPS interface preview](assets/interface/09-member-overview.png)
+
+#### Discover and request
+
+Search for movies and TV through a linked Ombi account, manage request email preferences and follow request progress without leaving the portal.
+
+![Discover and request — edited MPS interface preview](assets/interface/01-member-discover.png)
+
+#### Request status and watchlist
+
+See requested titles, media type, request date and progress such as waiting for download, declined or import completed. Availability checks are shown separately, so an import is not presented as confirmed playback availability.
+
+![Request status and watchlist — edited MPS interface preview](assets/interface/10-member-watchlist.png)
+
+#### Linked service accounts
+
+Review assigned Emby and Jellyfin accounts, setup status, connection state and access. Recheck pending Emby Connect links; Jellyfin uses local server accounts and does not require Emby Connect.
+
+![Linked service accounts — edited MPS interface preview](assets/interface/11-member-linked-accounts.png)
+
+### Administrator tools
+
+#### Administrator overview
+
+A central dashboard for invitations, subscriptions and connected services. See server, recent-member and invitation counts, open media servers and quickly start a member invitation.
+
+![Administrator overview — edited MPS interface preview](assets/interface/03-admin-overview.png)
+
+#### Invitations and access permissions
+
+Create invitations with an optional email recipient, expiry, available places and monthly plan. Select Emby or Jellyfin servers, library permissions and optional Live TV access, and choose the administrator credited for resulting revenue.
+
+![Invitations and access permissions — edited MPS interface preview](assets/interface/02-admin-invitations.png)
+
+#### Member management
+
+Review member access, billing type, paid-through dates and MFA status in one table. Open individual member management or the account-removal queue for follow-up.
+
+![Member management — edited MPS interface preview](assets/interface/04-admin-members.png)
+
+#### Administrator revenue reporting
+
+Filter attributed payments by month and payment environment. Compare paying members, gross collections, refunds or reversals and net receipts by administrator. These are collected-payment reports, not referral commissions.
+
+![Administrator revenue reporting — edited MPS interface preview](assets/interface/05-admin-revenue.png)
+
+#### Monthly membership plans
+
+Create membership plans, set monthly prices and inspect Stripe and PayPal publication status. Publish plans to configured providers or stop offering a plan on new invitations; saving a plan alone does not publish it.
+
+![Monthly membership plans — edited MPS interface preview](assets/interface/06-admin-plans.png)
+
+#### Ombi request approvals
+
+Review pending requests from the connected Ombi service and send approval or denial decisions back to Ombi. Refresh the list and open connection settings; this preview shows the empty state when no approvals are waiting.
+
+![Ombi request approvals — edited MPS interface preview](assets/interface/07-admin-ombi-approvals.png)
+
+#### Radarr library management
+
+Browse the connected movie library, search, filter and sort titles, and access add-new, activity, queue, calendar and system views. Refresh the library or trigger RSS sync through the integrated Media Managers interface.
+
+![Radarr library management — edited MPS interface preview](assets/interface/08-admin-radarr.png)
+
 ## 1.0.4 interface previews
 
 Captured from a disposable 1.0.4 customer-app fixture with example names and no live service accounts, credentials or customer data. Actual choices depend on your configured services and permissions.
