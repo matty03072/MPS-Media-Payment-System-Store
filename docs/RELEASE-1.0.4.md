@@ -18,6 +18,10 @@ The same values are in the `SHA256SUMS.txt` release asset. Download only the
 1.0.4 installers from the current release page; older installer assets have
 been retired from the public Store release.
 
+The umbrelOS community package pins both services to the multiarchitecture
+`v1.0.4` index digest
+`sha256:d5ed3fb21a69048650c036fa968ced1914c1c996c8d77a7ea334d037f53a7785`.
+
 ## New in 1.0.4
 
 - Jellyfin joins Emby as a selectable media-server provider. Administrators can
