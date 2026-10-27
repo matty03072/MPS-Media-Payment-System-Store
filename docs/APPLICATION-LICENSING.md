@@ -8,7 +8,7 @@ requires separate written permission. The existing no-resale licence remains unc
 for older releases remain unchanged.
 
 An MPS subscription is separate from the Stripe/PayPal subscriptions you collect
-from your own members. It costs £10 per month and permits three concurrent
+from your own members. It costs £5 per month and permits three concurrent
 registered MPS applications. The free tier supports ten enabled media members.
 Administrators with linked media identities count towards that allowance;
 administrative licence management and recovery remain available.
