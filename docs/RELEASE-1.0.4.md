@@ -1,5 +1,13 @@
 # MPS 1.0.4 — release notes
 
+## Current subscription pricing
+
+From 27 October 2026, new MPS unlock subscriptions cost **£10 per month** for
+up to three applications. The ten-member free tier is unchanged. Existing
+subscriptions retain their agreed price. The 1.0.4 installers may display the
+previous price; the current price and terms are shown before purchase at
+https://mediapaymentsystem.app/mps.
+
 MPS 1.0.4 is a **new release** for Windows x64, Ubuntu 24.04 x64 and the
 umbrelOS community preview (AMD64/ARM64). New users install the 1.0.4 package.
 Owners of managed MPS 1.0.3 installations update **in place**: keep the same
