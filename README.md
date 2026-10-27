@@ -206,7 +206,7 @@ MPS includes separate Sonarr/Radarr settings, member download and import progres
 
 ## Application licensing
 
-Ten enabled media members are free, including administrators with linked media identities. Larger installations require a GBP 5/month
+Ten enabled media members are free, including administrators with linked media identities. Larger installations require a GBP 10/month
 unlock covering three applications. Back up the entire state directory before
 updating; keep all existing app data. Without an unlock, excess member records
 remain stored but only the ten oldest eligible enabled members retain MPS access.
