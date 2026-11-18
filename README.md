@@ -12,6 +12,8 @@ Available through the MPS community app store — separate from the official Umb
 
 **MPS 1.0.4** Windows and Ubuntu 24.04 installers, checksums and installation notes are available from the [official MPS downloads page](https://mediapaymentsystem.app/downloads). Installer files are hosted on the MPS website, not in this GitHub repository.
 
+[Preview of planned 1.0.5 changes](docs/RELEASE-1.0.5.md) — not yet available for download.
+
 Fresh interactive Windows installs offer SQLite, SQL Server or PostgreSQL. Updating an existing installation preserves its database and configuration. Windows is unsigned; Linux requires systemd and CPython 3.12. Back up your complete data folder before updating.
 
 ## What is MPS? Media subscription and payment management
