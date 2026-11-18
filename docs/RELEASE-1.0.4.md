@@ -7,16 +7,12 @@ app identity and data directory, and run the new installer or use Umbrel's
 **Update** action. Do not uninstall to update. Back up the entire data directory,
 including the database, configuration and encryption key, first.
 
-## Download checksums (SHA-256)
+## Windows and Linux downloads
 
-```text
-c1701d0ba7fc115737c754acafe579c0e6bcb41d121bc960acc06373f15c134a  MPS-1.0.4-linux-x64.tar.gz
-4826db1208948223cb25c2e0706146020d99e884a563fd1a0f33822ddf1667a1  MPS-1.0.4-windows-x64-setup.exe
-```
-
-The same values are in the `SHA256SUMS.txt` release asset. Download only the
-1.0.4 installers from the current release page; older installer assets have
-been retired from the public Store release.
+Get the Windows x64 and Ubuntu 24.04 x64 installers, SHA-256 checksums and
+installation instructions from the [official MPS downloads page](https://mediapaymentsystem.app/downloads).
+The installers are hosted directly on the MPS website; GitHub is no longer the
+download location.
 
 The umbrelOS community package pins both services to the multiarchitecture
 `v1.0.4` index digest
