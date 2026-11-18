@@ -10,11 +10,7 @@ Available through the MPS community app store — separate from the official Umb
 
 ## Windows and Linux downloads
 
-**MPS 1.0.4** is available now:
-
-- [Windows x64 installer](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.4/MPS-1.0.4-windows-x64-setup.exe)
-- [Ubuntu 24.04 x64 archive](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.4/MPS-1.0.4-linux-x64.tar.gz)
-- [Checksums and installation notes](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.4)
+**MPS 1.0.4** Windows and Ubuntu 24.04 installers, checksums and installation notes are available from the [official MPS downloads page](https://mediapaymentsystem.app/downloads). Installer files are hosted on the MPS website, not in this GitHub repository.
 
 Fresh interactive Windows installs offer SQLite, SQL Server or PostgreSQL. Updating an existing installation preserves its database and configuration. Windows is unsigned; Linux requires systemd and CPython 3.12. Back up your complete data folder before updating.
 
@@ -143,16 +139,16 @@ Choose your platform below. Windows and Linux downloads are the **new MPS 1.0.4 
 
 ### Windows x64
 
-1. [Download the Windows installer](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.4/MPS-1.0.4-windows-x64-setup.exe).
+1. [Get the Windows installer from the MPS website](https://mediapaymentsystem.app/downloads).
 2. Run the EXE as administrator. The installer is unsigned.
-3. On a fresh interactive installation, choose **SQLite**, **Microsoft SQL Server** or **PostgreSQL**. External databases must already be provisioned; see the [setup requirements](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.4).
+3. On a fresh interactive installation, choose **SQLite**, **Microsoft SQL Server** or **PostgreSQL**. External databases must already be provisioned; see the [setup requirements](https://mediapaymentsystem.app/downloads).
 4. Open [http://localhost:8099](http://localhost:8099) on the installed computer and follow first-run setup.
 
 For an existing installation, back up the complete data folder and run the new installer over the current copy. It retains the database, configuration and encryption key; it does not switch databases. SQLite normally uses `C:\ProgramData\MPS\data\members.sqlite3`.
 
 ### Linux — Ubuntu 24.04 x64
 
-1. [Download the Linux archive](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/download/installers-1.0.4/MPS-1.0.4-linux-x64.tar.gz). Requires **systemd and CPython 3.12**.
+1. [Get the Linux archive from the MPS website](https://mediapaymentsystem.app/downloads). Requires **systemd and CPython 3.12**.
 2. Extract the archive, open a terminal in the extracted directory and run:
 
    ```bash
@@ -163,7 +159,7 @@ For an existing installation, back up the complete data folder and run the new i
 
 Back up the complete data folder before updating an existing installation. Standalone installers do not automatically configure a public domain, HTTPS or firewall access.
 
-[1.0.4 release notes and SHA-256 checksums](https://github.com/matty03072/MPS-Media-Payment-System-Store/releases/tag/installers-1.0.4)
+[1.0.4 release notes and SHA-256 checksums](https://mediapaymentsystem.app/downloads)
 
 ### umbrelOS
 
