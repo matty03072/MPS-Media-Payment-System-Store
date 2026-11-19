@@ -4,17 +4,17 @@
 
 **Self-hosted Emby and Jellyfin membership management, billing and automated account setup.**
 
-Community App Store · Current release: **1.0.4**
+Community App Store · Current release: **1.0.5**
 
 Available through the MPS community app store — separate from the official Umbrel App Store.
 
 ## Windows and Linux downloads
 
-**MPS 1.0.4** Windows and Ubuntu 24.04 installers, checksums and installation notes are available from the [official MPS downloads page](https://mediapaymentsystem.app/downloads). Installer files are hosted on the MPS website, not in this GitHub repository.
+**MPS 1.0.5** Windows and Ubuntu 24.04/26.04 installers, checksums and installation notes are available from the [official MPS downloads page](https://mediapaymentsystem.app/downloads). Installer files are hosted on the MPS website, not in this GitHub repository.
 
-[Preview of planned 1.0.5 changes](docs/RELEASE-1.0.5.md) — not yet available for download.
+[Read the 1.0.5 release notes](docs/RELEASE-1.0.5.md).
 
-Fresh interactive Windows installs offer SQLite, SQL Server or PostgreSQL. Updating an existing installation preserves its database and configuration. Windows is unsigned; Linux requires systemd and CPython 3.12. Back up your complete data folder before updating.
+Fresh Windows installs use SQLite. Updating an existing installation preserves its database and configuration. Windows is unsigned; Linux requires systemd and Python 3.12 on Ubuntu 24.04 or Python 3.14 on Ubuntu 26.04. Back up your complete data folder before updating.
 
 ## What is MPS? Media subscription and payment management
 
@@ -36,7 +36,7 @@ Access follows the invitation’s permissions and membership/payment requirement
 
 Members can manage their membership, open assigned Emby and Jellyfin servers and discover/request content through Ombi from the same portal. MPS coordinates the services; it does not replace them or automatically configure the administrator's service connections.
 
-See the installation and public-access limitations below, and the [1.0.4 release notes](docs/RELEASE-1.0.4.md).
+See the installation and public-access limitations below, and the [1.0.5 release notes](docs/RELEASE-1.0.5.md).
 
 ## Custom branding
 
@@ -137,20 +137,20 @@ Captured from a disposable 1.0.4 customer-app fixture with example names and no 
 
 ## Install
 
-Choose your platform below. Windows and Linux downloads are the **new MPS 1.0.4 release**. Existing managed 1.0.3 installations upgrade in place; do not uninstall.
+Choose your platform below. Windows and Linux downloads are the **MPS 1.0.5 release**. Existing managed installations upgrade in place; do not uninstall.
 
 ### Windows x64
 
 1. [Get the Windows installer from the MPS website](https://mediapaymentsystem.app/downloads).
 2. Run the EXE as administrator. The installer is unsigned.
-3. On a fresh interactive installation, choose **SQLite**, **Microsoft SQL Server** or **PostgreSQL**. External databases must already be provisioned; see the [setup requirements](https://mediapaymentsystem.app/downloads).
+3. A fresh installation sets up SQLite automatically; existing managed database configuration is preserved.
 4. Open [http://localhost:8099](http://localhost:8099) on the installed computer and follow first-run setup.
 
 For an existing installation, back up the complete data folder and run the new installer over the current copy. It retains the database, configuration and encryption key; it does not switch databases. SQLite normally uses `C:\ProgramData\MPS\data\members.sqlite3`.
 
-### Linux — Ubuntu 24.04 x64
+### Linux — Ubuntu 24.04 or 26.04 x64
 
-1. [Get the Linux archive from the MPS website](https://mediapaymentsystem.app/downloads). Requires **systemd and CPython 3.12**.
+1. [Get the Linux archive from the MPS website](https://mediapaymentsystem.app/downloads). Choose the archive for your Ubuntu version. Both require **systemd**; Ubuntu 24.04 requires **Python 3.12** and 26.04 requires **Python 3.14**.
 2. Extract the archive, open a terminal in the extracted directory and run:
 
    ```bash
@@ -161,7 +161,7 @@ For an existing installation, back up the complete data folder and run the new i
 
 Back up the complete data folder before updating an existing installation. Standalone installers do not automatically configure a public domain, HTTPS or firewall access.
 
-[1.0.4 release notes and SHA-256 checksums](https://mediapaymentsystem.app/downloads)
+[1.0.5 release notes and SHA-256 checksums](https://mediapaymentsystem.app/downloads)
 
 ### umbrelOS
 
@@ -184,13 +184,13 @@ default configuration. An official-store submission is under review; this commun
 
 Application source is private. This repository contains store packaging, documentation and presentation assets only—not application source.
 
-[Release notes](docs/RELEASE-1.0.4.md) · [Support](https://github.com/matty03072/MPS-Media-Payment-System-Store/issues)
+[Release notes](docs/RELEASE-1.0.5.md) · [Support](https://github.com/matty03072/MPS-Media-Payment-System-Store/issues)
 
 Container checks do not constitute an umbrelOS installation test. The first
 install, UI setup/MFA, reboot and backup/restore still need testing on your Umbrel.
 Back up the entire app data folder, including all configuration. Do not assume automatic migration to a future production app ID.
 
-## Update an existing Umbrel installation to 1.0.4
+## Update an existing Umbrel installation to 1.0.5
 
 Use **Update** in Umbrel for your existing MPS installation. **Do not uninstall or delete the app to upgrade.** Back up the complete app data folder first. Existing app identity, data locations and licensing terms are unchanged.
 

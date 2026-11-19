@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: media
 name: MPS — Media Payment System
-version: "1.0.4"
+version: "1.0.5"
 tagline: Media, memberships and payments in one place
 description: >-
   MPS — Media Payment System. Manage media-server invitations, members and optional billing integrations.
@@ -32,7 +32,7 @@ description: >-
   to measure active installations. No member details, media activity or service credentials are included.
   Reporting failures do not change free-tier access.
 
-releaseNotes: "New 1.0.4 release: adds Jellyfin server accounts and per-server access, separate Sonarr/Radarr Configuration, optional Media Managers, and updated member/admin guides. Existing managed 1.0.3 installations update in place; back up app data and do not uninstall. https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.4.md"
+releaseNotes: "MPS 1.0.5 adds optional family invitations, administrator-confirmed Emby/Jellyfin server removal, release status and availability fixes. Revoking access also disables Live TV. Existing managed installations update in place; back up all app data and do not uninstall. https://github.com/matty03072/MPS-Media-Payment-System-Store/blob/main/docs/RELEASE-1.0.5.md"
 developer: "matty03072"
 website: "https://github.com/matty03072/MPS-Media-Payment-System-Store"
 dependencies: []

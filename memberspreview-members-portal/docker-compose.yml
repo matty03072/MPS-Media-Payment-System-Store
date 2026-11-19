@@ -4,7 +4,7 @@ services:
       APP_HOST: memberspreview-members-portal_web_1
       APP_PORT: 8099
   web:
-    image: ghcr.io/matty03072/mps-media-payment-system:v1.0.4@sha256:d5ed3fb21a69048650c036fa968ced1914c1c996c8d77a7ea334d037f53a7785
+    image: ghcr.io/matty03072/mps-media-payment-system:v1.0.5@sha256:38bfe80062f641d6d186c35b066a6f11b1f4f757075c36945e9687133b5ac9c3
     user: "1000:1000"
     init: true
     restart: on-failure
@@ -21,7 +21,7 @@ services:
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
   worker:
-    image: ghcr.io/matty03072/mps-media-payment-system:v1.0.4@sha256:d5ed3fb21a69048650c036fa968ced1914c1c996c8d77a7ea334d037f53a7785
+    image: ghcr.io/matty03072/mps-media-payment-system:v1.0.5@sha256:38bfe80062f641d6d186c35b066a6f11b1f4f757075c36945e9687133b5ac9c3
     command: [worker]
     user: "1000:1000"
     init: true

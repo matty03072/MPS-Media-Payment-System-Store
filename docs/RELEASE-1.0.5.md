@@ -1,6 +1,6 @@
-# MPS 1.0.5 — preview release notes
+# MPS 1.0.5 — release notes
 
-**Not released yet.** MPS 1.0.5 is being prepared for Windows x64, Ubuntu 24.04 x64 and the umbrelOS community store (AMD64/ARM64). Features and fixes below are planned and remain subject to installed-package, upgrade and website-download checks. The current public download is 1.0.4. Upgrade a managed 1.0.4 installation in place; do not uninstall first. Back up the entire data directory, including the database, configuration and encryption key.
+MPS 1.0.5 is available for Windows x64, Ubuntu 24.04 and 26.04 x64, and the umbrelOS community store (AMD64/ARM64). Upgrade a managed 1.0.4 installation in place; do not uninstall first. Back up the entire data directory, including the database, configuration and encryption key.
 
 ## Features and improvements
 
@@ -14,10 +14,12 @@
 - Request availability can now show verified Emby, Jellyfin or both. One provider's outage does not hide a separately confirmed location; unverified checks retry.
 - Eligible linked imported Emby accounts regain their **Open Emby** link without bypassing managed-disable precedence or showing another member's servers.
 
+- Family revocation and server removal disable Live TV as well as account access on remote Emby and Jellyfin servers.
+
 ## Upgrade and distribution
 
 Schema v2 migrates to v3 by adding family and server-removal records. Older managed schema v1 installations migrate through v2. Existing provider and server records are retained. Rolling back requires both the old package and its matching pre-upgrade data backup.
 
-When released, Windows and Ubuntu installers will be available from the [official MPS downloads page](https://mediapaymentsystem.app/downloads), not GitHub release assets. The Umbrel community store remains the distribution path for its app. Public website metadata and download links must not be published until checksums, compiled-source exclusion and installed-package tests are complete.
+Windows and Ubuntu installers are available from the [official MPS downloads page](https://mediapaymentsystem.app/downloads), not GitHub release assets. The Umbrel community store remains the distribution path for its app. The published installers passed checksums, compiled-source exclusion, installed-package and upgrade tests.
 
-The Windows installer remains unsigned. The Ubuntu installer requires Ubuntu 24.04, systemd and Python 3.12. The default Umbrel proxy protects its preview; public invitations and payment callbacks still need a separately verified public HTTPS deployment.
+The Windows installer remains unsigned. The Ubuntu 24.04 installer requires systemd and Python 3.12; the separate Ubuntu 26.04 installer requires systemd and Python 3.14. The default Umbrel proxy protects its preview; public invitations and payment callbacks still need a separately verified public HTTPS deployment.
